@@ -1,3 +1,4 @@
+import React from 'react'
 import { EXAMPLE_CASE_1, EXAMPLE_CASE_2 } from '../helpers/taxConstants'
 
 export function ExampleButtons({ onLoad, onClear }) {

@@ -1,3 +1,5 @@
+import React from 'react'
+
 export function FieldLabel({ children }) {
   return <label className="block text-xs font-semibold uppercase tracking-wide mb-1.5" style={{ color: 'var(--slate)' }}>{children}</label>
 }
