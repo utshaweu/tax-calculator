@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+.tax-app {
+  --ink: #E7ECF3;
+  --page-bg: #0A0E16;
+  --panel-bg: #121826;
+  --teal: #34D399;
+  --teal-dark: #10B981;
+  --gold: #FBBF24;
+  --slate: #8B96AA;
+  --line: rgba(255, 255, 255, 0.09);
+  background:
+    radial-gradient(1100px 500px at 15% -10%, rgba(52, 211, 153, 0.10), transparent),
+    radial-gradient(900px 500px at 100% 0%, rgba(251, 191, 36, 0.07), transparent),
+    var(--page-bg);
+  font-family: 'Inter', sans-serif;
+}
+.font-display { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: -0.01em; }
+.font-mono-num { font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; }
+.panel {
+  background: var(--panel-bg);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 28px -14px rgba(0, 0, 0, 0.6);
+}
+.section-card { transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease; }
+.section-card:hover {
+  border-color: rgba(52, 211, 153, 0.3);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 16px 32px -14px rgba(0, 0, 0, 0.65);
+  transform: translateY(-1px);
+}
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-style: normal;
+  background: rgba(52, 211, 153, 0.14);
+  color: var(--teal);
+}
+.result-panel { border-top: 3px solid var(--teal); }
+.header-badge {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #06281C;
+  background: linear-gradient(155deg, var(--teal), var(--teal-dark));
+  box-shadow: 0 8px 20px -6px rgba(52, 211, 153, 0.5);
+}
+.ledger-divider { border-top: 1px solid var(--line); }
+.field-input {
+  border: 1px solid var(--line);
+  background: #0C111C;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: var(--ink);
+  font-family: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.field-input:hover { border-color: rgba(255, 255, 255, 0.18); }
+.field-input:focus {
+  outline: none;
+  border-color: var(--teal);
+  background: #0F1522;
+  box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.18);
+}
+.checkbox-input { width: 16px; height: 16px; accent-color: var(--teal); }
+.example-btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--teal);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.example-btn:hover {
+  border-color: var(--teal);
+  box-shadow: 0 4px 14px -4px rgba(52, 211, 153, 0.4);
+  transform: translateY(-1px);
+}
+.example-btn-clear { color: var(--slate); }
+.stamp {
+  position: relative;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(52, 211, 153, 0.12), rgba(251, 191, 36, 0.08));
+  box-shadow: 0 12px 28px -12px rgba(251, 191, 36, 0.35);
+}
